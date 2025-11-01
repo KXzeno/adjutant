@@ -1,5 +1,4 @@
 \documentclass[7px]{article}
-
 \usepackage{preamble}
 \usepackage{adkore}
 
@@ -9,9 +8,9 @@
 {Adjutant}
 {ON}
 {E1}
-{A reoccurring frustration is a modern solution to locating all sources that require changes to updated personal information, such as addresses, bank details, and phone numbers. The initial feature of this service is to fulfill just that, with a potential following of merging various problems and their respective solutions. Inspired by the terran adjutant from the franchise \textbf{StarCraft}.}
+{A reoccurring frustration is a modern solution to locating all sources that require changes to updated personal information, such as addresses, bank details, and phone numbers. The initial feature of this service is to fulfill just that, with a potential following of merging various problems and their respective solutions. Inspired by the terran "adjutant" from the franchise \textbf{StarCraft}.}
 {10-24-2025}
-{10-30-2025}
+{10-31-2025}
 
 \strategy
 % Core Decision
@@ -35,12 +34,31 @@
 % Decision Parameters
 {
   \begin{itemize}[label=\textsection]
+    \item {\textbf{Collections}}
+      \small
+      \begin{itemize}[label=$\multimapdotinv$, leftmargin=3mm]
+        \item Use abstractions to facilitate constructs consisting labels and descriptions
+        \item Wrap collections w/ UI that points to its products
+        \item Implement multiple search filters and designs, such as alphabetical, list, detailed, S-L
+        \item Labels \& Details and Service List as separate collections for maintainability and traceability
+      \end{itemize}
+      \normalsize
+    \item {\textbf{Constructs}}
+      \small
+      \begin{itemize}[label=$\multimapdotinv$, leftmargin=3mm]
+        \item Expose members such as service name, logo, and \textsl{updated} to the UI 
+        \item On \textbf{updates}, suggest related services that require changes
+        \item[$\Diamonddot$] \textcolor[HTML]{F5BB00}{Class the produces label unions}
+      \end{itemize}
+      \normalsize
   \end{itemize}
 }
 % Zero Technical Debt Concerns
 {
   \raggedright
   \begin{itemize}[label=\blitzb]
+    \small
+    \item 
   \end{itemize}
 }
 
@@ -48,6 +66,7 @@
 % Decision Process
 {
   \begin{itemize}
+    \item 
   \end{itemize}
 }
 % Results and Conflicts
@@ -61,12 +80,14 @@
       \begin{minipage}[t]{\linewidth}
         \vspace{-2.3em}
         \begin{enumerate}
+          \item 
         \end{enumerate}
       \end{minipage}
     } & {
       \begin{minipage}[t]{\linewidth}
         \vspace{-2.3em}
         \begin{enumerate}
+          \item 
         \end{enumerate}
       \end{minipage}
     } \\
