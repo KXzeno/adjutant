@@ -8,9 +8,9 @@
 {Adjutant}
 {ON}
 {E1}
-{A reoccurring frustration is a modern solution to locating all sources that require changes to updated personal information, such as addresses, bank details, and phone numbers. The initial feature of this service is to fulfill just that, with a potential following of merging various problems and their respective solutions. Inspired by the terran "adjutant" from the franchise \textbf{StarCraft}.}
+{A reoccurring frustration is a modern solution to locating all sources that require changes to updated personal information, such as addresses, bank details, and phone numbers. The initial feature of this service is to fulfill just that, with a potential following of merging various problems and their respective solutions.}
 {10-24-2025}
-{11-03-2025}
+{03-18-2026}
 
 \strategy
 % Core Decision
@@ -22,6 +22,7 @@
     \item Establish interface for creating a collection of labels
       \begin{itemize}[label=$\multimapdotinv$, leftmargin=3mm]
         \item Holds personalized details that suggests (reccommended) or mirrors (ill-advised) personal data
+        \item Said labels represent possible areas where information is contingent
       \end{itemize}
     \item Link details to sites, apps, and services that depend on them
     \item Initialize collapsed version of interface
@@ -69,7 +70,14 @@
 % Decision Process
 {
   \begin{itemize}
-    \item 
+    \small
+    \item \textbf{Labels} and \textbf{Details} consolidated into top-level \textbf{\textsl{Organization}}
+      \begin{itemize}[label=\blitzb]
+        \small
+        \item Holds contents such as \textsl{OrgDesc, OrgLink, MemRecord}
+      \end{itemize}
+    \item Armed w/out abstract members to avoid wasteful gold-plating on current requirements
+      \normalsize
   \end{itemize}
 }
 % Results and Conflicts
